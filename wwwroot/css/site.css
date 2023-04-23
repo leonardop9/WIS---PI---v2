@@ -111,9 +111,11 @@ header {
     display: flex;
     position: relative;
 }
-.nav-item-two a{
-    font-family: Verdana;
-}
+
+    .nav-item-two a {
+        font-family: Verdana;
+    }
+
 .nav-item::after {
     content: '';
     height: 3px;
@@ -257,7 +259,7 @@ header {
         height: 5vh;
     }
 
-.nav-link-meditacao > button{
+.nav-link-meditacao > button {
     width: 10vw;
     height: 3vh;
     border: none;
@@ -973,7 +975,7 @@ header {
     background-repeat: no-repeat;
 }
 
-#part-one--sobre {
+#part-one-body-privacidade {
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid white;
     border-radius: 30px 4px;
@@ -984,14 +986,10 @@ header {
     height: 90vh;
 }
 
-
-
-#container-img-sobre {
+#container-image-sobre {
     display: flex;
     height: 100%;
 }
-
-
 
 #text-sobre {
     margin-left: 17vw;
@@ -1000,16 +998,12 @@ header {
     height: 100%;
 }
 
-
-
     #text-sobre span {
         font-family: Verdana;
         font-size: 50px;
         color: white;
         margin-left: -2vw;
     }
-
-
 
     #text-sobre p {
         font-family: Verdana;
@@ -1021,9 +1015,6 @@ header {
         height: 5vh;
     }
 
-
-
-
 .container-sobre {
     display: flex;
     justify-content: center;
@@ -1032,8 +1023,6 @@ header {
     width: 75%;
     margin-right: 0vw;
 }
-
-
 
     .container-sobre img {
         width: 80%;
