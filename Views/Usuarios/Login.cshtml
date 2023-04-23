@@ -1,0 +1,32 @@
+﻿@page
+@model WIS_PI.Views.Usuarios.LoginModel
+@{
+}
+
+<body>
+    <main id="form-login">
+        <div id="shadow-form-login">
+            <section class="container-login">
+                <div id="header-login">
+                    <h1>Entrar</h1>
+                </div>
+                    <form>
+                       <div class="form-login">
+                                <label> Email </label>
+                                <input placeholder="Insira seu e-mail" />
+                            </div>
+                            <div class="form-login">
+                                <label> Senha </label>
+                                <input type="password" placeholder="Insira sua senha" />
+                            </div>
+                        <div class="form-button">
+                            <input type="submit" value="Entrar" class="btn-cadastrar btn-primary" />
+                        </div>
+                        </form>
+                <div id="href-cadastre-se">
+                    <a asp-action="Create">Não tem uma conta? Cadastre-se!</a>
+                </div>
+</section>
+        </div>
+</main>
+</body>

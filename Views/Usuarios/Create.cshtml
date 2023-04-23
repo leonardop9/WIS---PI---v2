@@ -1,0 +1,64 @@
+﻿@model WIS_PI.Models.Usuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<body id="body-page-cadastro">
+
+    <main id="main-cadastro">
+        <div id="shadow-forms">
+            <section class="container-cadastro">
+                <div id="header-cadastro">
+                    <h1>Cadastre-se</h1>
+                </div>
+
+                <div class="container-forms">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form">
+                            <label asp-for="Nome"></label>
+                            <input asp-for="Nome" id="input-nome" placeholder="Insira seu nome completo" />
+                            <span asp-validation-for="Nome"></span>
+                        </div>
+                        <div class="email-senha">
+                            <div class="form-email">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" placeholder="Insira seu e-mail" />
+                                <span asp-validation-for="Email"></span>
+                            </div>
+                            <div class="form-senha">
+                                <label asp-for="Senha"></label>
+                                <input type="password" asp-for="Senha" placeholder="Insira sua senha" />
+                                <span asp-validation-for="Senha"></span>
+                            </div>
+                        </div>
+                        <div class="datanascimento-genero">
+                            <div class="form-datanascimento">
+                                <label asp-for="DataNascimento"></label>
+                                <input asp-for="DataNascimento" />
+                                <span asp-validation-for="DataNascimento"></span>
+                            </div>
+                            <div class="form-genero">
+                                <label asp-for="GeneroId"></label>
+                                <select asp-for="GeneroId" asp-items="ViewBag.GeneroId"></select>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <input type="submit" value="Cadastrar" class="btn-cadastrar btn-primary" />
+                        </div>
+                    </form>
+                    <div id="back-login">
+                        <a asp-action="Login">Já tem uma conta? Entre</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
